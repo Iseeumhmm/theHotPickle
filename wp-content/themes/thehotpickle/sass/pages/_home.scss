@@ -1,0 +1,40 @@
+.content-area {
+    margin: 10rem 10px 0;
+    h2 {
+        margin-top: 2rem;
+    }
+}
+
+#play-btn {
+    background-image: url('http://imgur.com/JzQP8td.png');
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    margin: 2rem 0 2rem 2rem;
+}
+
+.speaker {
+    color: $green; 
+    font-size: 2rem;
+}
+
+.definition {
+    &-container {
+        margin: 1rem 0 0;
+    }
+    &-column {
+    }
+    &-body {
+        width: 100%;
+        display: inline-block;
+        word-wrap: break-word;
+
+    }
+    &-image {
+        border-radius: 10px;
+
+        object-fit: cover;
+        max-height: 8rem;
+        min-height: 8rem
+    }
+}

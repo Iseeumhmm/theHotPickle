@@ -1,0 +1,27 @@
+/*!
+Theme Name:         The Hot Pickle
+Theme URI:          http://www.thehotpickle.com
+Description:        Hot and Spicy
+Version:            1.0.0
+Author:             Rick Heffren
+Author URI:         https://rickheffren.com`
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Abstracts
+@import "./abstracts/variables";
+
+// Base 
+@import "./base/base";
+
+// Components
+@import "./components/navbar";
+
+// Pages
+
+@import "./pages/home";
