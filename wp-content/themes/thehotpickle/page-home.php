@@ -27,7 +27,6 @@ get_header();
             
 
             <div class="container">
-                <h1 class="text-center pb-3">The Hot Pickle</h1>
                 <i class="fas fa-volume-down fa-3x speaker" onclick="play()"></i><p style="position: relative; bottom: .45rem; left: 1rem; display: inline-block;">/T͟Hē-hät-pik(ə)l/ &nbsp;<span style="font-style: italic; font-weight: bold;">noun</span></p>
                 <audio id="audio" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/thehotpickle.mp3" ></audio>
                 <div class="row definition-container">
