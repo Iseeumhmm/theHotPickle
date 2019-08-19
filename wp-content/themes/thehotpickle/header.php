@@ -49,7 +49,7 @@
 								<a href="<?php echo get_site_url() ?>/" class="nav-link">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a href="<?php echo get_site_url() ?>discussion" class="nav-link">Discussion Board</a>
+								<a href="<?php echo get_site_url() ?>discussion" class="nav-link">Discussion</a>
 							</li>
 						</ul>
 					</div>

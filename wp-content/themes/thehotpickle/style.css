@@ -10835,6 +10835,12 @@ header {
   margin: 10rem 10px 0;
 }
 
+@media (max-width: 778px) {
+  .content-area {
+    margin-top: 16rem;
+  }
+}
+
 .content-area h2 {
   margin-top: 2rem;
 }
