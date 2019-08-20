@@ -43,7 +43,7 @@
 							</li> -->
 							<?php  } ?>
 							<li class="nav-item">
-								<a href="<?php echo get_site_url() ?>/store" class="nav-link">Store</a>
+								<a href="http://store.thehotpickle.ca" class="nav-link">Store</a>
 							</li>
 							<li class="nav-item">
 								<a href="<?php echo get_site_url() ?>/" class="nav-link">Blog</a>

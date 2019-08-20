@@ -10685,13 +10685,6 @@ h1 {
   margin-right: 0px !important;
 }
 
-[class^="col-"],
-.container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin: 0 !important;
-}
-
 a,
 a:link,
 a:visited {
@@ -10733,6 +10726,12 @@ header {
     top: 1.5rem;
     left: 2rem;
   }
+}
+
+.navbar-collapse {
+  position: absolute;
+  right: 5rem;
+  top: 0;
 }
 
 .nav-link,
@@ -10832,17 +10831,16 @@ header {
 }
 
 .content-area {
-  margin: 10rem 10px 0;
-}
-
-@media (max-width: 778px) {
-  .content-area {
-    margin-top: 16rem;
-  }
+  margin: 18rem 10px 0;
 }
 
 .content-area h2 {
   margin-top: 2rem;
+}
+
+.side-bar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #play-btn {

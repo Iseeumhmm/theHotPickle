@@ -10,6 +10,13 @@ header {
         left: 2rem;
     }
 }
+
+.navbar-collapse {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+}
+
 .nav-link, 
 .navbar-dark, 
 .navbar-nav{

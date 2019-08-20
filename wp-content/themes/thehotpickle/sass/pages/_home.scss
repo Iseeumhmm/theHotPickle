@@ -1,11 +1,16 @@
 .content-area {
-    margin: 10rem 10px 0;
-    @media( max-width: 778px ) {
-        margin-top: 16rem;
-    }
+    margin: 18rem 10px 0;
+    // @media( max-width: 778px ) {
+    //     margin-top: 18rem;
+    // }
     h2 {
         margin-top: 2rem;
     }
+}
+
+.side-bar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 #play-btn {
