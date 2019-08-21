@@ -14,7 +14,6 @@
 
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <script>
@@ -22,11 +21,7 @@ get_header();
                     var audio = document.getElementById("audio");
                     audio.play();
                 }
-            </script>  
-
-            
-
-            <div class="container">
+            </script> 
                 <div class="row d-flex space-between">
                     <div class="col-md-8 side-bar">
                         <i class="fas fa-volume-down fa-3x speaker" onclick="play()"></i><p style="position: relative; bottom: .45rem; left: 1rem; display: inline-block;">/T͟Hē-hät-pik(ə)l/ &nbsp;<span style="font-style: italic; font-weight: bold;">noun</span></p>

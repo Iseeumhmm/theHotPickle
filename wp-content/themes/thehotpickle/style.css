@@ -10716,122 +10716,59 @@ header {
   position: relative;
 }
 
-.navbar-nav {
-  z-index: 100;
+.header-bar {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
-  .navbar-nav {
-    position: relative;
-    top: 1.5rem;
-    left: 2rem;
-  }
-}
-
-.navbar-collapse {
-  position: absolute;
-  right: 5rem;
-  top: 0;
-}
-
-.nav-link,
-.navbar-dark,
-.navbar-nav {
-  color: #087005 !important;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler-icon {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-}
-
-.logo {
-  top: 1rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.nav-container {
-  width: 100%;
-}
-
-.nav-container nav {
-  z-index: 1000;
-  color: #087005;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-.nav-container img {
-  height: 15rem;
-}
-
-.navbar {
-  padding: 1rem 5rem;
-}
-
-.navbar-nav a {
-  padding: 0;
-  display: inline;
-}
-
-.navbar-nav .nav-item:after {
-  content: '|';
-  margin: 0 .75rem;
-  width: 100%;
-}
-
-.navbar-nav .nav-item:last-child:after {
-  content: '';
-  margin: 0;
-  border: none;
-}
-
-.navbar-clickable {
-  display: block;
-  width: 100%;
-}
-
-.show {
-  display: inline-block;
-}
-
-.hide {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .navbar-container {
-    padding: 1rem 2rem;
-  }
-
-  .navbar-nav .nav-item:after {
-    content: none;
-  }
-
-  .navbar-nav .nav-item {
+  .header-bar {
     text-align: right;
   }
 }
 
-@media (max-width: 948px) {
-  .navbar-container {
-    padding: 0;
-  }
+.header-bar ul {
+  margin: 0;
+}
 
-  .navbar-container img {
-    height: 2rem;
+.nav_upper li {
+  color: #FA0001;
+  display: inline-block;
+}
+
+.banner {
+  background-size: cover;
+  background-position: bottom left;
+  height: 26rem;
+}
+
+.logo {
+  border-radius: 5rem;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  left: 4.25rem;
+  top: 3rem;
+  background-color: white;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
+.logo-image {
+  height: 10rem;
+}
+
 .content-area {
-  margin: 18rem 10px 0;
+  position: relative;
+  margin: 0 10px;
 }
 
 .content-area h2 {
@@ -10852,7 +10789,7 @@ header {
 }
 
 .speaker {
-  color: #087005;
+  color: #FA0001;
   font-size: 2rem;
 }
 

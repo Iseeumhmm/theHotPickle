@@ -1,5 +1,6 @@
 .content-area {
-    margin: 18rem 10px 0;
+    position: relative;
+    margin: 0 10px;
     // @media( max-width: 778px ) {
     //     margin-top: 18rem;
     // }
@@ -22,7 +23,7 @@
 }
 
 .speaker {
-    color: $green; 
+    color: $red-primary; 
     font-size: 2rem;
 }
 

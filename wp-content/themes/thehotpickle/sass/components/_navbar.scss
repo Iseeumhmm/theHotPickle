@@ -2,112 +2,44 @@ header {
     position: relative;
 }
 
-.navbar-nav {
-    z-index: 100;
-    @media( max-width: 991px ) {
-        position: relative;
-        top: 1.5rem;
-        left: 2rem;
-    }
-}
-
-.navbar-collapse {
-    position: absolute;
-    right: 5rem;
-    top: 0;
-}
-
-.nav-link, 
-.navbar-dark, 
-.navbar-nav{
-    color: #087005 !important;
-}
-.navbar-toggler {
-    border: none;
-}
-.navbar-toggler-icon {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-}
-
-.logo {
-    top: 1rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-container {
+.header-bar {    
     width: 100%;
-    nav {
-        z-index: 1000;
-        color: #087005;
-        font-weight: 300;
-        font-size: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    @media( max-width: 991px ) {
+        text-align: right;
     }
-    img { height: 15rem; }
-    
-}
-.navbar {
-    padding: 1rem 5rem;
-    &-nav {
-        a { padding: 0; display: inline;}
-        .nav-item:after {
-            content: '|';
-            margin: 0 .75rem;
-            width: 100%;
-        }
-        .nav-item:last-child:after {
-            content: '';
-            margin: 0;
-            border: none;
-        }
-    }
-    &-clickable {
-        display: block;
-        width: 100%;
+    & ul {
+        margin: 0;
     }
 }
 
-.show {
+.nav_upper li {
+    color: $red-primary;
     display: inline-block;
 }
-.hide {
-    display: none;
+
+.banner {
+    background-size: cover;
+    background-position: bottom left;
+    height: 26rem;
 }
-
-// **********************************  MEDIA QUERIES **********************************
-
-@media (max-width: 1200px) {
-    .navbar-container {
-        padding: 1rem 2rem;
+.logo {
+    border-radius: 5rem;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    left: 4.25rem;
+    top: 3rem;
+    @media( max-width: 767px ) {
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .navbar-nav {
-        .nav-item:after {
-            content: none;
-        }
-        .nav-item {
-            text-align: right;
-        }
-    }
-}
-
-@media (max-width: 948px) {
-    .navbar-container {
-        padding: 0;
-        img { height: 2rem; }
+    background-color: white;
+    &-image {
+        height: 10rem;
     }
 }
 
-@media (max-width: 767px) {
-    // .navbar-nav {
-    //     .nav-item:after {
-    //         content: '';
-    //         width: 100%;
-    //     }
-    // }
-    // .navbar {
-    //     padding: 1rem 1rem 0;
-    // }
-}
