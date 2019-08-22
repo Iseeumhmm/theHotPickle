@@ -25,7 +25,7 @@ get_header();
                 <div class="row d-flex space-between">
                     <div class="col-md-8 side-bar">
                         <i class="fas fa-volume-down fa-3x speaker" onclick="play()"></i><p style="position: relative; bottom: .45rem; left: 1rem; display: inline-block;">/T͟Hē-hät-pik(ə)l/ &nbsp;<span style="font-style: italic; font-weight: bold;">noun</span></p>
-                        <audio id="audio" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/thehotpickle.mp3" ></audio>
+                        <audio id="audio" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/thats_hot.m4a" ></audio>
                         <div class="row definition-container">
                             <div class="col-3 definition-column d-flex justify-content-center">
                                 <img class="definition-image" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/hot_dills.jpg"/></figure>
