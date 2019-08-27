@@ -16,7 +16,7 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div style="height: 100vh; width: 100vw;">
-				<h1 style="position: absolute; left: 50%; right: 50%; transform: translate(-50%, -50%);">Coming Soon!</h1>
+				<h1 style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Coming Soon!</h1>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
