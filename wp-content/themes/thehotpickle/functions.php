@@ -90,6 +90,8 @@ add_action( 'after_setup_theme', 'thehotpickle_setup' );
  *
  * @global int $content_width
  */
+
+
 function thehotpickle_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.

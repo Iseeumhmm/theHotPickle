@@ -14,44 +14,64 @@
 
 get_header();
 ?>
+
+	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <script>
-                function play(){
-                    var audio = document.getElementById("audio");
-                    audio.play();
-                }
-            </script> 
-                <div class="row d-flex space-between">
-                    <div class="col-md-8 side-bar">
-                        <i class="fas fa-volume-down fa-3x speaker" onclick="play()"></i><p style="position: relative; bottom: .45rem; left: 1rem; display: inline-block;">/T͟Hē-hät-pik(ə)l/ &nbsp;<span style="font-style: italic; font-weight: bold;">noun</span></p>
-                        <audio id="audio" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/thats_hot.m4a" ></audio>
-                        <div class="row definition-container">
-                            <div class="col-3 definition-column d-flex justify-content-center">
-                                <img class="definition-image" src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/08/hot_dills.jpg"/></figure>
-                            </div>
-                            <div class="col mx-2 definition-column d-flex align-items-center">
-                                <p class="definition-body">A place where pickle and hot food addicts can indulge their bad selves and connect with others alike.</p>
-                            </div>
-                        </div>
-                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-                        the_content();
-                        endwhile; else: ?>
-                        <p>Sorry, no posts matched your criteria.</p>
-                        <?php endif; ?>
-                    </div>
-                    <div class="col-md-4 side-bar">
-                        <h2 class="text-center mt-0">Welcome</h2>
-                        <?php $wpb_all_query = new WP_Query(array('post_type'=>'about-me', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
-                        <?php if ( $wpb_all_query->have_posts() ) : ?>
-                        <?php $wpb_all_query->the_post(); ?>
-                        <?php echo the_content();?>
-                        <?php endif ?>
-                    </div>
-                </div>
-            </div>
+			<div class="welcome_alignment_block">
+				<?php while ( have_posts() ) : the_post(); ?> 
+				<div class="welcome_message">
+					<?php the_content(); ?> 
+					<?php endwhile;
+					wp_reset_query(); 
+					?>
+				</div><!-- .entry-content-page -->
+			</div>
 
-            
+			<div class="hard_line"></div>
+			<div class="container-fluid">
+					<?php 
+						// the query
+						$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
+						
+						<?php if ( $wpb_all_query->have_posts() ) : ?>
+							<!-- the loop -->
+						<?php 
+							$columnSwitch = ""; 
+							$flexAlignment = "";
+						?>
+				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+					<div class="posts row <?php echo $columnSwitch; ?>">
+						<div class="col-md-9">
+							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
+							<h1><?php echo the_title(); ?></h1>
+							<p class="author"><?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
+							<span class="content"><?php the_content(); ?></span>
+						</div>
+						<div class="col-md-3 image-container <?php echo $flexAlignment; ?>">
+							<?php
+								$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+								echo '<a href="'.esc_url($featured_img_url).'">'; 
+								echo '<img src="' . $featured_img_url . '" class="image"></img>';
+								echo '</a>';
+								if ( $columnSwitch == "flex-row-reverse" ) {
+									$columnSwitch = "";
+								} else {
+									$columnSwitch = "flex-row-reverse";
+									$flexAlignment = "justify-content-start";
+								}
+							?>
+						</div>
+					</div>
+
+					<?php endwhile; ?>
+					<!-- end of the loop -->
+					<?php wp_reset_postdata(); ?>
+				
+				<?php else : ?>
+					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

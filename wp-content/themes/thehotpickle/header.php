@@ -15,6 +15,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a50a4c009f.js"></script>
 	<style>
         .banner {
@@ -25,26 +26,36 @@
 </head>
 
 <body <?php body_class(); ?>>
+<style>
+		.hero {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/Hero.jpg');
+		}
+	</style>
 <div id="page" class="site">
-	<div class="container">
+	<!-- <div class="container-fluid"> -->
 		<header id="masthead" class="site-header">
-			<div class="banner">
-				<div class="header-bar">
-					<ul class="nav_upper">
-						<li class="">
-							<a href="http://store.thehotpickle.ca" class="nav-link">Store</a>
-						</li>
-						<li class="">
-							<a href="<?php echo get_site_url() ?>/" class="nav-link">Blog</a>
-						</li>
-						<li class="">
-							<a href="<?php echo get_site_url() ?>discussion" class="nav-link">Discussion</a>
-						</li>
-					</ul>
-				</div>
-				<div class="logo">
-					<a href="<?php echo get_site_url() ?>/"><img class="logo-image" src="<?php echo get_template_directory_uri()?>/images/logo_pepper.png" alt="Logo"></a>
-				</div>
+			<div class="hero">
+				<div class="align_header_block">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/Logo.png" alt="" class="logo">
+					<div class="heading">
+						<p>for the love of</p>
+						<h1>HOT FOOD</h1>
+						<nav>
+							<ul>
+								<li>
+										<a href="#">
+											<p>STORE</p>
+										</a>
+								</li>
+								<li>
+										<a href="#">
+											<p>DISCUSSION</p>
+										</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+			   	</div>
 			</div>
 		</header><!-- #masthead -->
 		<div id="content" class="site-content">

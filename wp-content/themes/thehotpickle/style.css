@@ -10659,20 +10659,29 @@ a.text-dark:focus {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body,
 html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-size: .625;
+  font-size: 62.5%;
+}
+
+@media (max-width: 1233px) {
+  html {
+    font-size: 48.5%;
+  }
 }
 
 h1 {
+  font-weight: 700;
   font-size: 2.8rem;
 }
 
@@ -10712,102 +10721,192 @@ li:focus {
   outline: 0;
 }
 
-header {
+.hero {
   position: relative;
-}
-
-.header-bar {
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .header-bar {
-    text-align: right;
-  }
-}
-
-.header-bar ul {
-  margin: 0;
-}
-
-.nav_upper li {
-  color: #FA0001;
-  display: inline-block;
-}
-
-.banner {
+  background-position: top left;
   background-size: cover;
-  background-position: bottom left;
-  height: 26rem;
+  height: 77vw;
+  width: 100vw;
 }
 
 .logo {
-  border-radius: 5rem;
-  height: 10rem;
-  width: 10rem;
   position: relative;
-  left: 4.25rem;
-  top: 3rem;
-  background-color: white;
+  height: 18vw;
+  top: 4vw;
+  left: 7vw;
 }
 
-@media (max-width: 767px) {
-  .logo {
-    left: 50%;
-    transform: translateX(-50%);
+.align_header_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 47.5vw;
+}
+
+@media (max-width: 885px) {
+  .align_header_block {
+    height: 47.25vw;
   }
 }
 
-.logo-image {
-  height: 10rem;
+.heading {
+  line-height: 6rem;
+  color: white;
+  position: absolute;
+  bottom: -9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
-.content-area {
-  position: relative;
-  margin: 0 10px;
-}
-
-.content-area h2 {
-  margin-top: 2rem;
-}
-
-.side-bar {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-#play-btn {
-  background-image: url("http://imgur.com/JzQP8td.png");
-  background-size: cover;
-  width: 75px;
-  height: 75px;
-  margin: 2rem 0 2rem 2rem;
-}
-
-.speaker {
+.heading nav {
   color: #FA0001;
+}
+
+.heading nav li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 4.35rem;
+  padding: 0 2.175rem;
+}
+
+.heading nav li p {
+  font-size: 2.3rem;
+}
+
+@media (max-width: 885px) {
+  .heading nav li {
+    margin-top: 1rem;
+    padding: 0 .5rem;
+  }
+}
+
+.heading p {
+  font-size: 3.7rem;
+}
+
+.heading h1 {
+  color: #FA0001;
+  font-size: 6rem;
+}
+
+@media (max-width: 885px) {
+  .heading {
+    width: 60vw;
+    bottom: -7rem;
+    left: 61%;
+  }
+
+  .heading p {
+    font-size: 2.5rem;
+  }
+
+  .heading h1 {
+    font-size: 4rem;
+    line-height: 1rem;
+  }
+}
+
+.welcome_alignment_block {
+  position: absolute;
+  top: 0;
+  left: 35vw;
+  width: 62vw;
+  height: 65.5vw;
+}
+
+@media (max-width: 885px) {
+  .welcome_alignment_block {
+    position: relative;
+    left: 0;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.welcome_message {
+  max-width: 100%;
+  position: absolute;
+  left: 3rem;
+  bottom: -8rem;
+}
+
+.welcome_message p {
+  font-size: 2.3rem;
+}
+
+.welcome_message h1 {
+  position: relative;
+  font-size: 3.7rem;
+}
+
+@media (max-width: 885px) {
+  .welcome_message {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin: 2rem auto 0;
+    padding: 0 15px;
+  }
+}
+
+.posts {
+  width: 90%;
   font-size: 2rem;
 }
 
-.definition-container {
-  margin: 1rem 0 0;
+.posts.row {
+  margin: 8rem auto !important;
 }
 
-.definition-body {
-  width: 100%;
-  display: inline-block;
-  word-wrap: break-word;
+@media (max-width: 885px) {
+  .posts.row {
+    margin: 3rem auto !important;
+  }
 }
 
-.definition-image {
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 8rem;
-  min-height: 8rem;
+.posts .image {
+  max-width: 82vw;
+  max-height: 40rem;
+}
+
+.posts .image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 885px) {
+  .posts .image-container {
+    justify-content: center;
+  }
+}
+
+.posts h1 {
+  height: 2.3rem;
+  font-size: 3.25rem;
+  font-weight: extra-bold;
+  text-transform: uppercase;
+}
+
+.hard_line {
+  padding-top: 8.2rem;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 3px solid grey;
+}
+
+@media (max-width: 885px) {
+  .hard_line {
+    padding-top: 3rem;
+  }
+}
+
+.author {
+  font-size: 2rem;
+  padding: 1.8rem 0 1.5rem;
+  color: grey;
 }
 

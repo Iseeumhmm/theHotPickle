@@ -1,49 +1,124 @@
-.content-area {
-    position: relative;
-    margin: 0 10px;
-    // @media( max-width: 778px ) {
-    //     margin-top: 18rem;
-    // }
-    h2 {
-        margin-top: 2rem;
-    }
-}
-
-.side-bar {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-#play-btn {
-    background-image: url('http://imgur.com/JzQP8td.png');
-    background-size: cover;
-    width: 75px;
-    height: 75px;
-    margin: 2rem 0 2rem 2rem;
-}
-
-.speaker {
-    color: $red-primary; 
-    font-size: 2rem;
-}
-
-.definition {
-    &-container {
-        margin: 1rem 0 0;
-    }
-    &-column {
-    }
-    &-body {
+.welcome_alignment_block{
+    position: absolute;
+    top: 0;
+    left: 35vw;
+    width: 62vw;
+    height: 65.5vw;
+    @media( max-width: 885px ) {
+        position: relative;
+        left: 0;
+        height: auto;
         width: 100%;
-        display: inline-block;
-        word-wrap: break-word;
-
-    }
-    &-image {
-        border-radius: 10px;
-
-        object-fit: cover;
-        max-height: 8rem;
-        min-height: 8rem
     }
 }
+
+.welcome_message {
+    max-width: 100%;
+    position: absolute;
+    left: 3rem;
+    bottom: -8rem;
+    p { 
+        font-size: 2.3rem;
+     }
+    h1 { 
+        position: relative;
+        font-size: 3.7rem; 
+    }
+    @media( max-width: 885px ) {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        margin: 2rem auto 0;
+        padding: 0 15px;
+    }
+}
+.posts {
+    width: 90%;
+    &.row { margin: 8rem auto!important; }
+    @media( max-width: 885px ) {
+        &.row { margin: 3rem auto!important; }
+    }
+    .image {
+        max-width: 82vw;
+        max-height: 40rem;
+        &-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            @media( max-width: 885px ) {
+                justify-content: center;
+            }
+        }
+    }
+    font-size: 2rem;
+    h1 { 
+        height: 2.3rem;
+        font-size: 3.25rem;
+        font-weight: extra-bold; 
+        text-transform: uppercase;
+    }
+}
+.hard_line {
+    padding-top: 8.2rem;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 3px solid grey;
+    @media( max-width: 885px ) {
+        padding-top: 3rem;
+    }
+}
+.author {
+    font-size: 2rem;
+    padding: 1.8rem 0 1.5rem;
+    color: grey;
+}
+// .content-area {
+//     position: relative;
+//     margin: 0 10px;
+//     // @media( max-width: 778px ) {
+//     //     margin-top: 18rem;
+//     // }
+//     h2 {
+//         margin-top: 2rem;
+//     }
+// }
+
+// .side-bar {
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
+
+// #play-btn {
+//     background-image: url('http://imgur.com/JzQP8td.png');
+//     background-size: cover;
+//     width: 75px;
+//     height: 75px;
+//     margin: 2rem 0 2rem 2rem;
+// }
+
+// .speaker {
+//     color: $red-primary; 
+//     font-size: 2rem;
+// }
+
+// .definition {
+//     &-container {
+//         margin: 1rem 0 0;
+//     }
+//     &-column {
+//     }
+//     &-body {
+//         width: 100%;
+//         display: inline-block;
+//         word-wrap: break-word;
+
+//     }
+//     &-image {
+//         border-radius: 10px;
+
+//         object-fit: cover;
+//         max-height: 8rem;
+//         min-height: 8rem
+//     }
+// }
