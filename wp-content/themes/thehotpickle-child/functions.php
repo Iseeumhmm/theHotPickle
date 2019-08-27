@@ -56,6 +56,7 @@ function about_me_init() {
     
 }
 add_action( 'init', 'about_me_init' );
+remove_filter( 'the_content', 'wpautop' );
 
 
 ?>
