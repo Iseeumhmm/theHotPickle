@@ -10829,7 +10829,7 @@ li:focus {
   max-width: 100%;
   position: absolute;
   left: 3rem;
-  bottom: -8rem;
+  bottom: -11rem;
 }
 
 .welcome_message p {
@@ -10868,8 +10868,15 @@ li:focus {
 }
 
 .posts .image {
-  max-width: 82vw;
+  width: 21vw;
   max-height: 40rem;
+}
+
+@media (max-width: 767px) {
+  .posts .image {
+    width: 60vw;
+    height: auto;
+  }
 }
 
 .posts .image-container {
@@ -10880,7 +10887,8 @@ li:focus {
 
 @media (max-width: 885px) {
   .posts .image-container {
-    justify-content: center;
+    padding: 21vw 0;
+    justify-content: center !important;
   }
 }
 

@@ -37,17 +37,11 @@ get_header();
 						<?php if ( $wpb_all_query->have_posts() ) : ?>
 							<!-- the loop -->
 						<?php 
-							$columnSwitch = ""; 
+							$columnSwitch = "flex-row-reverse"; 
 							$flexAlignment = "";
 						?>
 				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 					<div class="posts row <?php echo $columnSwitch; ?>">
-						<div class="col-md-9">
-							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
-							<h1><?php echo the_title(); ?></h1>
-							<p class="author"><?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
-							<span class="content"><?php the_content(); ?></span>
-						</div>
 						<div class="col-md-3 image-container <?php echo $flexAlignment; ?>">
 							<?php
 								$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
@@ -56,11 +50,18 @@ get_header();
 								echo '</a>';
 								if ( $columnSwitch == "flex-row-reverse" ) {
 									$columnSwitch = "";
+									$flexAlignment = "";
 								} else {
 									$columnSwitch = "flex-row-reverse";
 									$flexAlignment = "justify-content-start";
 								}
 							?>
+						</div>
+						<div class="col-md-9">
+							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
+							<h1><?php echo the_title(); ?></h1>
+							<p class="author"><?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
+							<span class="content"><?php the_content(); ?></span>
 						</div>
 					</div>
 
