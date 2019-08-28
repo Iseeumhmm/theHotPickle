@@ -19,7 +19,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<?php while ( have_posts() ) : the_post(); ?> 
-			<div class="welcome_alignment_block-upper_welcome"><?php the_content(); ?></div> 
+			<div id="welcome" class="welcome_alignment_block-upper_welcome"><?php the_content(); ?></div> 
 			<div class="welcome_alignment_block">
 				<div class="welcome_message">
 					<?php the_content(); ?> 

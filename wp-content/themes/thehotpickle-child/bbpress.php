@@ -34,7 +34,8 @@ These could be SPANs or DIVs and with entirely different classes.
  
 <div id="content" role="main">
  
- 
+<?php echo do_shortcode('[bbp-login]'); ?>
+
 <?php
 /*
 Start the Loop
