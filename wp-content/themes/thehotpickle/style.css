@@ -10821,12 +10821,51 @@ li:focus {
   height: 65.5vw;
 }
 
+.welcome_alignment_block-upper_welcome {
+  display: none;
+}
+
+@media (max-width: 885px) {
+  .welcome_alignment_block-upper_welcome {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77vw;
+  }
+
+  .welcome_alignment_block-upper_welcome h1 {
+    position: absolute;
+    bottom: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.7rem;
+  }
+}
+
+@media (max-width: 885px) and (max-width: 480px) {
+  .welcome_alignment_block-upper_welcome h1 {
+    left: 61%;
+  }
+}
+
+@media (max-width: 885px) {
+  .welcome_alignment_block-upper_welcome p {
+    display: none;
+  }
+}
+
 @media (max-width: 885px) {
   .welcome_alignment_block {
     position: relative;
     left: 0;
     height: auto;
     width: 100%;
+  }
+
+  .welcome_alignment_block h1 {
+    display: none;
   }
 }
 
@@ -10879,8 +10918,14 @@ li:focus {
 
 @media (max-width: 767px) {
   .posts .image {
-    width: 60vw;
+    padding: 10vh 0;
     height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts .image {
+    width: 40vw;
   }
 }
 
@@ -10892,7 +10937,6 @@ li:focus {
 
 @media (max-width: 885px) {
   .posts .image-container {
-    padding: 21vw 0;
     justify-content: center !important;
   }
 }
@@ -10918,8 +10962,15 @@ li:focus {
 }
 
 .author {
-  font-size: 2rem;
-  padding: 1.8rem 0 1.5rem;
+  margin-left: 1rem;
+  font-size: 1.75rem;
+  padding: .7rem 0 1.5rem;
   color: grey;
+}
+
+.author-fas {
+  font-size: 1.5rem;
+  bottom: .1rem;
+  position: relative;
 }
 

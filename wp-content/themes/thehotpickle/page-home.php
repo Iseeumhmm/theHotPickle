@@ -18,8 +18,9 @@ get_header();
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<?php while ( have_posts() ) : the_post(); ?> 
+			<div class="welcome_alignment_block-upper_welcome"><?php the_content(); ?></div> 
 			<div class="welcome_alignment_block">
-				<?php while ( have_posts() ) : the_post(); ?> 
 				<div class="welcome_message">
 					<?php the_content(); ?> 
 					<?php endwhile;
@@ -60,7 +61,7 @@ get_header();
 						<div class="col-md-9">
 							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
 							<h1><?php echo the_title(); ?></h1>
-							<p class="author"><?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
+							<p class="author"><i class="author-fas fas fa-calendar-alt"></i>&nbsp;&nbsp;<?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
 							<span class="content"><?php the_content(); ?></span>
 						</div>
 					</div>
