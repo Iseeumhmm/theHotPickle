@@ -27,7 +27,9 @@
 		<header id="masthead" class="site-header">
 			<div id="hero" class="hero">
 				<div class="align_header_block">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/Logo.png" alt="" class="logo">
+					<a href="/">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Logo.png" alt="" class="logo">
+					</a>
 					<div class="heading">
 						<p>for the love of</p>
 						<h1>HOT FOOD</h1>
