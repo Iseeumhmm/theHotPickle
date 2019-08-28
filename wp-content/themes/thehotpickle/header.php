@@ -17,24 +17,15 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a50a4c009f.js"></script>
-	<style>
-        .banner {
-            background-image: url('<?php echo get_template_directory_uri(); ?>/images/banner.jpg')
-        }
-    </style>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<style>
-		.hero {
-			background-image: url('<?php echo get_template_directory_uri(); ?>/images/Hero.jpg');
-		}
-	</style>
+
 <div id="page" class="site">
 	<!-- <div class="container-fluid"> -->
 		<header id="masthead" class="site-header">
-			<div class="hero">
+			<div id="hero" class="hero">
 				<div class="align_header_block">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/Logo.png" alt="" class="logo">
 					<div class="heading">
@@ -43,14 +34,14 @@
 						<nav>
 							<ul>
 								<li>
-										<a href="#">
-											<p>STORE</p>
-										</a>
+									<a href="#">
+										<p>STORE</p>
+									</a>
 								</li>
 								<li>
-										<a href="#">
-											<p>DISCUSSION</p>
-										</a>
+									<a href="#">
+										<p>DISCUSSION</p>
+									</a>
 								</li>
 							</ul>
 						</nav>

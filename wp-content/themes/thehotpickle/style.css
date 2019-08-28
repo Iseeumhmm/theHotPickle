@@ -10795,7 +10795,6 @@ li:focus {
   .heading {
     width: 60vw;
     bottom: -7rem;
-    left: 61%;
   }
 
   .heading p {
@@ -10805,6 +10804,12 @@ li:focus {
   .heading h1 {
     font-size: 4rem;
     line-height: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    left: 61%;
   }
 }
 
