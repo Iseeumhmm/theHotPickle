@@ -8,9 +8,8 @@
  */
 
 ?>
-
-<?php do_action( 'bbp_template_before_forums_loop' ); ?>
 <?php echo do_shortcode('[bbp-login]'); ?>
+<?php do_action( 'bbp_template_before_forums_loop' ); ?>
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 	<li class="bbp-header">
 		<ul class="forum-titles">
