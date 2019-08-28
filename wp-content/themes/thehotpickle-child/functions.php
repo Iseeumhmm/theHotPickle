@@ -58,5 +58,19 @@ function about_me_init() {
 add_action( 'init', 'about_me_init' );
 remove_filter( 'the_content', 'wpautop' );
 
+add_action( 'init', 'blockusers_init' );
+
+// Remove access to admin bar and dashboard
+
+add_filter('show_admin_bar', '__return_false');
+
+function blockusers_init() {
+    if ( is_admin() && ! current_user_can( 'administrator' ) &&
+        ! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+        wp_redirect( home_url() );
+    exit;
+}
+
+}
 
 ?>
