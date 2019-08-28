@@ -10737,6 +10737,7 @@ li:focus {
 }
 
 .align_header_block {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -10751,6 +10752,7 @@ li:focus {
 }
 
 .heading {
+  z-index: 1000;
   line-height: 6rem;
   color: white;
   position: absolute;
@@ -10814,6 +10816,7 @@ li:focus {
 }
 
 .welcome_alignment_block {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 35vw;

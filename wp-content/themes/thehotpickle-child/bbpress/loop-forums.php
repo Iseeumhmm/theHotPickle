@@ -10,10 +10,9 @@
 ?>
 
 <?php do_action( 'bbp_template_before_forums_loop' ); ?>
+<?php echo do_shortcode('[bbp-login]'); ?>
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
-
 	<li class="bbp-header">
-
 		<ul class="forum-titles">
 			<li class="bbp-forum-info"><?php _e( 'Boards', 'bbpress' ); ?></li>
 			<li class="bbp-forum-topic-count"><?php _e( 'Topics', 'bbpress' ); ?></li>
@@ -22,7 +21,6 @@
 		</ul>
 
 	</li><!-- .bbp-header -->
-
 	<li class="bbp-body">
 
 		<?php while ( bbp_forums() ) : bbp_the_forum(); ?>

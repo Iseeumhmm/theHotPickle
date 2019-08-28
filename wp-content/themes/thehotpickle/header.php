@@ -41,7 +41,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="<?php echo get_site_url(); ?>/forums">
 										<p>DISCUSSION</p>
 									</a>
 								</li>

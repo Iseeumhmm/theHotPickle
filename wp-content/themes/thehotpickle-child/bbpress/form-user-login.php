@@ -22,7 +22,7 @@
 			<label for="user_pass"><?php _e( 'Password', 'bbpress' ); ?>: </label>
 			<input type="password" name="pwd" value="<?php bbp_sanitize_val( 'user_pass', 'password' ); ?>" size="20" id="user_pass" tabindex="<?php bbp_tab_index(); ?>" />
 		</div>
-
+		<?php echo do_shortcode('[nextend_social_login provider="facebook"]'); ?>
 		<div class="bbp-remember-me">
 			<input type="checkbox" name="rememberme" value="forever" <?php checked( bbp_get_sanitize_val( 'rememberme', 'checkbox' ) ); ?> id="rememberme" tabindex="<?php bbp_tab_index(); ?>" />
 			<label for="rememberme"><?php _e( 'Keep me signed in', 'bbpress' ); ?></label>
