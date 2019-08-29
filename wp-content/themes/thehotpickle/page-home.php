@@ -42,27 +42,27 @@ get_header();
 							$flexAlignment = "";
 						?>
 				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-					<div class="posts row <?php echo $columnSwitch; ?>">
+					<div class="posts row ">
+						<div class="col-md-9">
+							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
+							<a href="<?php echo get_permalink(); ?>"><h1><?php echo the_title(); ?></h1></a>
+							<p class="author"><i class="author-fas fas fa-calendar-alt"></i>&nbsp;&nbsp;<?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
+							<span class="content"><?php echo get_the_excerpt(); ?></span>
+						</div>
 						<div class="col-md-3 image-container <?php echo $flexAlignment; ?>">
 							<?php
 								$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 								echo '<a href="'.esc_url($featured_img_url).'">'; 
 								echo '<img src="' . $featured_img_url . '" class="image"></img>';
 								echo '</a>';
-								if ( $columnSwitch == "flex-row-reverse" ) {
-									$columnSwitch = "";
-									$flexAlignment = "";
-								} else {
-									$columnSwitch = "flex-row-reverse";
-									$flexAlignment = "justify-content-start";
-								}
+								// if ( $columnSwitch == "flex-row-reverse" ) {
+								// 	$columnSwitch = "";
+								// 	$flexAlignment = "";
+								// } else {
+								// 	$columnSwitch = "flex-row-reverse";
+								// 	$flexAlignment = "justify-content-start";
+								// }
 							?>
-						</div>
-						<div class="col-md-9">
-							<!-- <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> -->
-							<h1><?php echo the_title(); ?></h1>
-							<p class="author"><i class="author-fas fas fa-calendar-alt"></i>&nbsp;&nbsp;<?php the_date(); ?>&nbsp;-&nbsp;<?php the_author(); ?></p>
-							<span class="content"><?php the_content(); ?></span>
 						</div>
 					</div>
 

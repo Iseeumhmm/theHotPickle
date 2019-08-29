@@ -10813,6 +10813,36 @@ li:focus {
   .heading {
     left: 61%;
   }
+
+  .heading ul {
+    position: relative;
+    left: -17%;
+  }
+}
+
+.site_posts {
+  padding: 0 5px;
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.entry-header h1 {
+  font-size: 3.25rem;
+  font-weight: extra-bold;
+  text-transform: uppercase;
+}
+
+.post-thumbnail img {
+  margin-top: 6rem;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.entry-content p {
+  padding-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .welcome_alignment_block {
@@ -10945,7 +10975,6 @@ li:focus {
 }
 
 .posts h1 {
-  height: 2.3rem;
   font-size: 3.25rem;
   font-weight: extra-bold;
   text-transform: uppercase;

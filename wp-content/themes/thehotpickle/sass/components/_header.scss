@@ -64,5 +64,9 @@
     }
     @media( max-width: 480px ) {
         left: 61%;
+        ul {
+            position: relative;
+            left: -17%;
+        }
     }
 }
