@@ -10834,6 +10834,10 @@ li:focus {
   text-transform: uppercase;
 }
 
+.wp-block-image {
+  text-align: center;
+}
+
 .post-thumbnail img {
   margin-top: 6rem;
   width: 100% !important;
