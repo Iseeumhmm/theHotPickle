@@ -10821,7 +10821,7 @@ li:focus {
 }
 
 .site_posts {
-  padding: 0 5px;
+  padding: 0 15px;
 }
 
 .entry-header {
@@ -10836,6 +10836,11 @@ li:focus {
 
 .wp-block-image {
   text-align: center;
+  padding-bottom: 3rem;
+}
+
+.post-thumbnail {
+  text-align: center;
 }
 
 .post-thumbnail img {
@@ -10845,8 +10850,35 @@ li:focus {
 }
 
 .entry-content p {
+  margin: 0 auto;
   padding-bottom: 3rem;
   font-size: 2rem;
+}
+
+.comments {
+  width: 67%;
+}
+
+@media (min-width: 767px) {
+  .wp-block-image img {
+    width: 67vw !important;
+    height: auto !important;
+  }
+
+  .entry-content p {
+    margin: 0 auto;
+    width: 67vw !important;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  .post-thumbnail {
+    text-align: center;
+  }
+
+  .post-thumbnail img {
+    width: 67vw !important;
+  }
 }
 
 .welcome_alignment_block {
@@ -10927,14 +10959,12 @@ li:focus {
     position: relative;
     bottom: 0;
     left: 0;
-    width: 90%;
     margin: 2rem auto 0;
     padding: 0 15px;
   }
 }
 
 .posts {
-  width: 90%;
   font-size: 2rem;
 }
 
@@ -10950,7 +10980,6 @@ li:focus {
 
 .posts .image {
   width: 21vw;
-  max-height: 40rem;
 }
 
 @media (max-width: 767px) {
@@ -10970,6 +10999,11 @@ li:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.posts .image-container a img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 885px) {

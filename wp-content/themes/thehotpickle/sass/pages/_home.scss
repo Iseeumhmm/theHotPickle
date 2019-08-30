@@ -52,13 +52,11 @@
         position: relative;
         bottom: 0;
         left: 0;
-        width: 90%;
         margin: 2rem auto 0;
         padding: 0 15px;
     }
 }
 .posts {
-    width: 90%;
     &.row { margin: 8rem auto!important; }
     @media( max-width: 885px ) {
         &.row { margin: 3rem auto!important; }
@@ -66,7 +64,6 @@
     
     .image {
         width: 21vw;
-        max-height: 40rem;
         @media( max-width: 767px ) {
             padding: 10vh 0;
             height: auto;
@@ -75,6 +72,11 @@
             width: 40vw;
         }
         &-container {
+           
+            & a img {
+                width: 100%;
+                height: auto;
+            }
             display: flex;
             justify-content: flex-end;
             align-items: center;

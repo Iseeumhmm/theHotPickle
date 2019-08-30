@@ -1,5 +1,5 @@
 .site_posts {
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 .entry-header {
@@ -11,10 +11,13 @@
     }
 }
 
+
 .wp-block-image {
     text-align: center;
+    padding-bottom: 3rem;
 }
 .post-thumbnail {
+    text-align: center;
     img {
         margin-top: 6rem;
         width: 100% !important;
@@ -25,7 +28,33 @@
 
 .entry-content {
     p  {
+        margin: 0 auto;
         padding-bottom: 3rem;
         font-size: 2rem;
+    }
+}
+
+.comments {
+    width : 67%;
+}
+
+@media( min-width: 767px){
+    .wp-block-image img {
+        width: 67vw !important;
+        height: auto !important;
+    }
+    .entry-content {
+        p  {
+            margin: 0 auto;
+            width: 67vw !important;
+            padding-bottom: 3rem;
+            font-size: 2rem;
+        }
+    }
+    .post-thumbnail {
+        text-align: center;
+        img {
+            width: 67vw !important;
+        }
     }
 }
