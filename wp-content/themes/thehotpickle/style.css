@@ -10736,6 +10736,11 @@ li:focus {
   left: 7vw;
 }
 
+img.fadein {
+  opacity: 0;
+  transition: opacity .7s;
+}
+
 .align_header_block {
   z-index: 1;
   position: absolute;
@@ -10809,17 +10814,6 @@ li:focus {
   }
 }
 
-@media (max-width: 480px) {
-  .heading {
-    left: 61%;
-  }
-
-  .heading ul {
-    position: relative;
-    left: -17%;
-  }
-}
-
 .site_posts {
   padding: 0 15px;
 }
@@ -10855,8 +10849,52 @@ li:focus {
   font-size: 2rem;
 }
 
+.entry-footer {
+  text-align: center;
+  margin: 0 auto;
+  width: 69%;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  color: blue;
+}
+
 .comments {
-  width: 67%;
+  margin: 0 auto;
+  width: 69%;
+}
+
+@media (max-width: 480px) {
+  .comments {
+    width: 100%;
+  }
+}
+
+#respond {
+  font-size: 2rem;
+}
+
+#respond p {
+  padding-bottom: 1rem;
+}
+
+#respond h3 {
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+#respond label {
+  display: block;
+}
+
+#respond textarea {
+  border: 1px solid grey;
+  width: 100%;
+}
+
+#respond #submit {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 @media (min-width: 767px) {

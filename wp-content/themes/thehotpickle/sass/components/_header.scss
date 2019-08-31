@@ -12,6 +12,12 @@
     top: 4vw;
     left: 7vw;
 }
+
+img.fadein {
+	opacity: 0;
+	transition: opacity .7s;
+}
+
 .align_header_block {
     z-index: 1;
     position: absolute;
@@ -62,11 +68,10 @@
             line-height: 1rem;
         }
     }
-    @media( max-width: 480px ) {
-        left: 61%;
-        ul {
-            position: relative;
-            left: -17%;
-        }
-    }
+    // @media( max-width: 480px ) {
+    //     ul {
+    //         position: relative;
+    //         left: -17%;
+    //     }
+    // }
 }

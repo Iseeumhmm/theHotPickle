@@ -52,15 +52,10 @@ get_header();
 							<?php
 								$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 								echo '<a href="'.esc_url($featured_img_url).'">'; 
-								echo '<img src="' . $featured_img_url . '" class="image"></img>';
+								echo '<img class="lazy fadein" data-src="' . $featured_img_url . '" alt="">';
+
+								// echo '<img src="' . $featured_img_url . '" class="image"></img>';
 								echo '</a>';
-								// if ( $columnSwitch == "flex-row-reverse" ) {
-								// 	$columnSwitch = "";
-								// 	$flexAlignment = "";
-								// } else {
-								// 	$columnSwitch = "flex-row-reverse";
-								// 	$flexAlignment = "justify-content-start";
-								// }
 							?>
 						</div>
 					</div>
