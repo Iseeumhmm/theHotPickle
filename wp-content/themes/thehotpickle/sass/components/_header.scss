@@ -7,10 +7,15 @@
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     height: 18vw;
-    top: 4vw;
-    left: 7vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+    // position: relative;
+    // height: 18vw;
+    // top: 4vw;
+    // left: 7vw;
 }
 
 img.fadein {

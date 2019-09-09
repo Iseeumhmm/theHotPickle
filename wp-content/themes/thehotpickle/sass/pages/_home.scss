@@ -57,7 +57,12 @@
     }
 }
 .posts {
-    &.row { margin: 8rem auto!important; }
+    &.row { 
+        margin: 8rem auto!important;
+        @media( min-width: 767px ) {
+            width: 67vw;
+        }
+     }
     @media( max-width: 885px ) {
         &.row { margin: 3rem auto!important; }
     }
@@ -72,7 +77,7 @@
             width: 40vw;
         }
         &-container {
-           
+           padding-top: 3rem;
             & a img {
                 width: 100%;
                 height: auto;

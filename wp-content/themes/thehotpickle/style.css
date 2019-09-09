@@ -10730,10 +10730,11 @@ li:focus {
 }
 
 .logo {
-  position: relative;
+  position: absolute;
   height: 18vw;
-  top: 4vw;
-  left: 7vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3rem;
 }
 
 img.fadein {
@@ -10824,29 +10825,55 @@ img.fadein {
 
 .entry-header h1 {
   font-size: 3.25rem;
-  font-weight: extra-bold;
+  font-weight: 600 !important;
+  padding-bottom: 3rem;
   text-transform: uppercase;
 }
 
 .wp-block-image {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+
+figure.wp-block-image {
   padding-bottom: 3rem;
 }
 
 .post-thumbnail {
-  text-align: center;
+  display: none;
 }
 
-.post-thumbnail img {
-  margin-top: 6rem;
-  width: 100% !important;
-  height: auto !important;
+.alignright.is-resized {
+  margin-bottom: 0;
 }
 
+.entry-content h2,
+.entry-content h3,
 .entry-content p {
   margin: 0 auto;
   padding-bottom: 3rem;
   font-size: 2rem;
+}
+
+.entry-content h2 {
+  font-size: 2rem;
+  font-weight: 600 !important;
+}
+
+.entry-content h3 {
+  font-weight: 600 !important;
+}
+
+.entry-content ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem 5rem;
+  font-size: 2rem;
+}
+
+.entry-content figcaption {
+  margin: -1rem 0 4rem;
 }
 
 .entry-footer {
@@ -10898,16 +10925,36 @@ img.fadein {
 }
 
 @media (min-width: 767px) {
+  .wp-block-image {
+    width: 67vw !important;
+  }
+
   .wp-block-image img {
     width: 67vw !important;
     height: auto !important;
+  }
+
+  .alignright.is-resized {
+    max-width: 15rem;
   }
 
   .entry-content p {
     margin: 0 auto;
     width: 67vw !important;
     padding-bottom: 3rem;
-    font-size: 2rem;
+  }
+
+  .entry-content h2,
+  .entry-content h3 {
+    width: 67vw !important;
+  }
+
+  .entry-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .entry-content ul {
+    width: 67vw;
   }
 
   .post-thumbnail {
@@ -11010,6 +11057,12 @@ img.fadein {
   margin: 8rem auto !important;
 }
 
+@media (min-width: 767px) {
+  .posts.row {
+    width: 67vw;
+  }
+}
+
 @media (max-width: 885px) {
   .posts.row {
     margin: 3rem auto !important;
@@ -11034,6 +11087,7 @@ img.fadein {
 }
 
 .posts .image-container {
+  padding-top: 3rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
